@@ -29,6 +29,38 @@ será designado en el [🏅 Cuadro de Honor del rDl](CUADRO-DE-HONOR.md).**
 
 ---
 
+## 👋 ¿Qué es esto?
+
+Una **guía viva** para organizar las carnes asadas de la comunidad **Playas on
+Tech** en el Patio del **root dev lab**. Junta en un solo lugar todo lo que se
+repite en cada **#TragasOnTech**: qué tener en sitio, cuánto comprar, cómo
+prepararlo, cómo partir la cuenta y qué mejorar para la próxima. No es un
+reglamento — es un punto de partida que **mejora con cada evento**.
+
+## 🧭 Cómo usarla
+
+Sigue el flujo de un evento:
+
+**🗓️ Antes**
+1. Revisa el [inventario](docs/inventario.md) y consigue lo que falte (⬜).
+2. Calcula y compra con [compras y cortes](docs/compras.md) (~250 g por persona).
+
+**🔥 Durante**
+3. Guíate por [preparación, tiempos y bebidas](docs/preparacion-y-logistica.md):
+   manejo de la brasa, orden de asado y cadena de frío (recuerda: **no hay refri**).
+
+**🧾 Después**
+4. Junta la cuenta y divídela parejo con [costos](docs/costos.md).
+5. Llena el [feedback](docs/feedback.md) para calibrar la próxima.
+
+**🙌 Siempre**
+- ¿Aportaste algo en especie? Vas al [Cuadro de Honor](CUADRO-DE-HONOR.md).
+- ¿Tienes mejoras o recetas? Mándalas por PR — ver [cómo aportar](CONTRIBUTING.md).
+
+> 💡 Es un **documento vivo**: si algo no cuadró en tu asada, edítalo. La próxima sale mejor.
+
+---
+
 ## 📑 Índice
 
 | Sección | Para qué sirve |
