@@ -1,5 +1,21 @@
 # 🔥 Tragas on Tech — Guía de la Carnita Asada del rDl
 
+```
+                    (   sizzle…   )
+                     ~   ~   ~   ~
+          .-"""-.    .-"""-.    .-"""-.
+         ( ~~~~~ )  ( ~~~~~ )  ( ~~~~~ )       <- la carne
+          '-...-'    '-...-'    '-...-'
+     ___________________________________________
+    |  =======================================  |   <- la parrilla
+    |   \  /   \  /   \  /   \  /   \  /   \  /  |
+    |    \/     \/     \/     \/     \/     \/   |   <- las brasas
+    |___________________________________________|
+        ||                                 ||
+        ||                                 ||
+       /  \                               /  \
+```
+
 > Por petición popular y con la finalidad de mejorar la experiencia de las
 > **#TragasOnTech**, este repositorio busca documentar los **activos faltantes**
 > en el *root dev lab* (**rDl**), así como el **proceso de compra, selección y
