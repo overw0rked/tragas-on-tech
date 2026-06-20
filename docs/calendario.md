@@ -1,7 +1,8 @@
 # 📅 Calendario de eventos y asistentes históricos
 
 Registro de las **#TragasOnTech** en el rDl: cuándo, con qué motivo y quién se ha
-parado a la carnita. El más reciente arriba.
+parado a la carnita. El más reciente arriba. Los asistentes hacen su propio
+[check-in](check-in.md) y las secciones automáticas se actualizan solas. 🤖
 
 ---
 
@@ -15,7 +16,7 @@ parado a la carnita. El más reciente arriba.
 
 ---
 
-## ✅ Eventos pasados
+## 📌 Eventos pasados (destacados)
 
 | Fecha | Hora | Motivo / comunidad | Asistentes | Feedback |
 |---|---|---|:--:|:--:|
@@ -23,15 +24,31 @@ parado a la carnita. El más reciente arriba.
 
 ---
 
-## 👥 Asistentes históricos
+## ✅ Check-in por evento
 
-Roster de la banda que ha asistido. Suma tu nombre cuando vengas (y si aportaste
-en especie, también vas al [🏅 Cuadro de Honor](../CUADRO-DE-HONOR.md)).
+> 🤖 Sección **autogenerada** desde los issues de check-in — **no editar a mano**.
+> Para registrarte, ve [cómo hacer check-in](check-in.md).
 
-| Nombre / alias | Eventos asistidos | Desde |
-|---|:--:|---|
-| *— por registrar —* | — | — |
+<!-- CHECKIN:START -->
+_Aún no hay check-ins registrados._
+<!-- CHECKIN:END -->
 
 ---
 
-<sub>Documento vivo · #TragasOnTech · root dev lab. Marca tu asistencia y mantén el conteo al día.</sub>
+## 👥 Asistentes históricos
+
+Roster de la banda que ha asistido (por handle de GitHub). Suma tu nombre haciendo
+[check-in](check-in.md); si además aportaste en especie, también vas al
+[🏅 Cuadro de Honor](../CUADRO-DE-HONOR.md).
+
+> 🤖 Filas **autogeneradas** — no editar a mano.
+
+| Nombre / alias | Eventos asistidos | Desde |
+|---|:--:|---|
+<!-- ROSTER:START -->
+| *— por registrar —* | — | — |
+<!-- ROSTER:END -->
+
+---
+
+<sub>Documento vivo · #TragasOnTech · root dev lab. El roster se llena con cada check-in.</sub>

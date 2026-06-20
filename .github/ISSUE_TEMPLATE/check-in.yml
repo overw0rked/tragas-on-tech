@@ -1,0 +1,39 @@
+name: "✅ Check-in de evento"
+description: "Crea la hoja de check-in para una #TragasOnTech (uso de quien organiza)."
+title: "Check-in · YYYY-MM-DD · Motivo del evento"
+labels: ["check-in"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Edita el título** con la fecha real y el motivo, p. ej.:
+        `Check-in · 2026-07-15 · Flutter MX`
+        Luego **pinea** el issue y pega su **QR** en la puerta del rDl.
+  - type: input
+    id: fecha
+    attributes:
+      label: Fecha
+      placeholder: "2026-07-15"
+    validations:
+      required: true
+  - type: input
+    id: motivo
+    attributes:
+      label: Motivo / comunidad
+      placeholder: "Mobile Developer Community"
+    validations:
+      required: true
+  - type: input
+    id: hora
+    attributes:
+      label: Hora
+      placeholder: "21:00"
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ### 👋 Asistentes: hagan check-in
+        - **Reacciona** a este issue con 🌮 (o 👍), **o** **comenta** `presente`.
+        - ¿Traes acompañante? Coméntalo (`+1`, `+2`…).
+
+        El roster en [`docs/calendario.md`](../blob/main/docs/calendario.md) se actualiza solo. 🤖

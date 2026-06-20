@@ -1,0 +1,104 @@
+name: Check-in
+
+on:
+  issues:
+    types: [opened, edited, reopened, labeled]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Número del issue de check-in a re-sincronizar"
+        required: true
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: check-in-roster
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolver número de issue
+        id: ctx
+        env:
+          EVENT: ${{ github.event_name }}
+          INPUT_ISSUE: ${{ github.event.inputs.issue }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            echo "number=$INPUT_ISSUE" >> "$GITHUB_OUTPUT"
+          else
+            echo "number=$ISSUE_NUMBER" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: ¿Tiene label "check-in"?
+        id: gate
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          NUM: ${{ steps.ctx.outputs.number }}
+        run: |
+          labels=$(gh api "repos/$REPO/issues/$NUM" --jq '[.labels[].name] | join(",")')
+          if printf '%s' "$labels" | grep -q 'check-in'; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            echo "Issue #$NUM sin label check-in — nada que hacer."
+          fi
+
+      - name: Checkout
+        if: steps.gate.outputs.ok == 'true'
+        uses: actions/checkout@v4
+
+      - name: Recolectar asistentes (comentarios + reacciones)
+        if: steps.gate.outputs.ok == 'true'
+        id: collect
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          NUM: ${{ steps.ctx.outputs.number }}
+        run: |
+          comments=$(gh api --paginate "repos/$REPO/issues/$NUM/comments" --jq '.[].user.login' || true)
+          reactions=$(gh api --paginate "repos/$REPO/issues/$NUM/reactions" --jq '.[].user.login' || true)
+          author=$(gh api "repos/$REPO/issues/$NUM" --jq '.user.login')
+          title=$(gh api "repos/$REPO/issues/$NUM" --jq '.title')
+          participants=$(printf '%s\n%s\n%s\n' "$comments" "$reactions" "$author" | sed '/^$/d' | sort -u | paste -sd, -)
+          {
+            echo "participants=$participants"
+            echo "title=$title"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Setup Node
+        if: steps.gate.outputs.ok == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Actualizar roster
+        if: steps.gate.outputs.ok == 'true'
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          NUM: ${{ steps.ctx.outputs.number }}
+          TITLE: ${{ steps.collect.outputs.title }}
+          PARTICIPANTS: ${{ steps.collect.outputs.participants }}
+        run: node scripts/update-roster.mjs "$NUM" "$TITLE" "$PARTICIPANTS"
+
+      - name: Commit y push
+        if: steps.gate.outputs.ok == 'true'
+        env:
+          NUM: ${{ steps.ctx.outputs.number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "Sin cambios en el roster."
+          else
+            git add docs/calendario.md data/checkins.json
+            git commit -m "check-in: asistentes del issue #$NUM [skip ci]"
+            git push
+          fi

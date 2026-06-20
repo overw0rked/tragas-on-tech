@@ -73,6 +73,7 @@ Sigue el flujo de un evento:
 | [Manejo de costos](docs/costos.md) | Cooperacha a partes iguales: total del día ÷ asistentes 💸 |
 | [Feedback post-evento](docs/feedback.md) | Formato y bitácora para calibrar la próxima 📝 |
 | [Calendario y asistentes](docs/calendario.md) | Eventos pasados/próximos y roster histórico 📅 |
+| [Check-in de asistentes](docs/check-in.md) | Registro propio vía issue + QR · roster automático ✅ |
 | [Cuadro de Honor](CUADRO-DE-HONOR.md) | Quién ha aportado en especie 🏅 |
 | [Cómo aportar](CONTRIBUTING.md) | En especie o al repo |
 
