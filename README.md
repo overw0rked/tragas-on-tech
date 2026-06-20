@@ -29,21 +29,6 @@ será designado en el [🏅 Cuadro de Honor del rDl](CUADRO-DE-HONOR.md).**
 
 ---
 
-## 🔥 ¿Por qué hacemos Tragas on Tech?
-
-Una comunidad de tecnología no se construye solo con código, charlas y proyectos.
-Necesita convivencia: los momentos donde conoces a la persona detrás del stack,
-donde una conversación sobre marinados deriva en una colaboración, donde pedirle
-consejo a alguien ya no da pena porque ya compartieron tacos.
-
-Las **#TragasOnTech** son parte de la **infraestructura humana** de Playas on
-Tech. Un espacio sin agenda formal donde se generan confianza, amistades,
-ideas, y ese sentido de pertenencia que hace que una comunidad dure.
-
-> *La tecnología nos reúne; la convivencia nos convierte en comunidad.*
-
----
-
 ## 👋 ¿Qué es esto?
 
 Una **guía viva** para organizar las carnes asadas de la comunidad **Playas on
