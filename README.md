@@ -76,6 +76,7 @@ Sigue el flujo de un evento:
 | [Check-in de asistentes](docs/check-in.md) | Registro propio vía issue + QR · roster automático ✅ |
 | [Cuadro de Honor](CUADRO-DE-HONOR.md) | Quién ha aportado en especie 🏅 |
 | [Cómo aportar](CONTRIBUTING.md) | En especie o al repo |
+| [Roadmap](ROADMAP.md) | Qué sigue: recetario, WhatsApp (polls/fechas/resúmenes), CLI… 🗺️ |
 
 ---
 
