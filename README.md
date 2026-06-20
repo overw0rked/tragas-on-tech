@@ -37,6 +37,7 @@ será designado en el [🏅 Cuadro de Honor del rDl](CUADRO-DE-HONOR.md).**
 | [Inventario de básicos](docs/inventario.md) | **Qué hay y qué falta** en sitio (tracker) |
 | [Compras, gramaje y cortes](docs/compras.md) | Cuánta carne, qué cortes y guarniciones |
 | [Preparación, tiempos y bebidas](docs/preparacion-y-logistica.md) | Sazón, asado por corte, cronograma y cadena de frío sin refri |
+| [Recetario](docs/recetario.md) | Instrucciones de preparación de la comunidad 🚧 *próximamente* |
 | [Manejo de costos](docs/costos.md) | Cooperacha a partes iguales: total del día ÷ asistentes 💸 |
 | [Feedback post-evento](docs/feedback.md) | Formato y bitácora para calibrar la próxima 📝 |
 | [Cuadro de Honor](CUADRO-DE-HONOR.md) | Quién ha aportado en especie 🏅 |
