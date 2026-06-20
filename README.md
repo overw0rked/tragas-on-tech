@@ -18,6 +18,7 @@ será designado en el [🏅 Cuadro de Honor del rDl](CUADRO-DE-HONOR.md).**
 | [El espacio · Patio del rDl](#-el-espacio--patio-del-rdl) | Aforo, layout y filosofía de convivencia |
 | [Inventario de básicos](docs/inventario.md) | **Qué hay y qué falta** en sitio (tracker) |
 | [Compras, gramaje y cortes](docs/compras.md) | Cuánta carne, qué cortes y guarniciones |
+| [Preparación, tiempos y bebidas](docs/preparacion-y-logistica.md) | Sazón, asado por corte, cronograma y cadena de frío sin refri |
 | [Cuadro de Honor](CUADRO-DE-HONOR.md) | Quién ha aportado en especie 🏅 |
 | [Cómo aportar](CONTRIBUTING.md) | En especie o al repo |
 

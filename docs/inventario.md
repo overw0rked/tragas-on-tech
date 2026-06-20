@@ -44,6 +44,18 @@ faltantes**: marca el estado conforme se vayan consiguiendo y anota quién aport
 | Sal, pimienta, ajo en polvo | base | — | ⬜ | — |
 | Especias | orégano, chiltepín, etc. | — | ⬜ | — |
 
+### 🧊 Bebidas y cadena de frío · *no hay refri en el rDl*
+
+> ⚠️ **Críticos:** sin refrigerador, la cadena de frío es 100 % externa.
+> Ver la [gestión de bebidas](preparacion-y-logistica.md#4-gestión-de-bebidas--sin-refrigerador-en-el-rdl).
+
+| Activo | Especificación | Cant. | Estado | Aportado por |
+|---|---|:--:|:--:|---|
+| Hielera / cooler | idealmente **2** (consumo + enfriado) | 2 | ⬜ | — |
+| Hielo | **compra del día** (~1 kg/persona, no se almacena) | — | 🔄 | *por evento* |
+| Vasos | — | — | ⬜ | — |
+| Destapador | si aplica | — | ⬜ | — |
+
 ---
 
 > 💡 **¿Conseguiste algo de la lista?** Cambia su estado a ✅, pon tu nombre en
